@@ -61,3 +61,21 @@ function calculateResults() {
         totalStrong.textContent = `$${totaAmountlPerson.toFixed(2)}`
         
      }
+
+     function reset() {
+        bill = 0
+        tipPercentage = 0
+        numberOfPeople = 0
+        document.querySelector("#bill").value = ""
+        tipPercentage = 0
+        removeClassButtonSelected()
+        document.querySelector("#people").value = ""
+        calculateResults()
+        document.querySelector("#custom-tip").valuem= ""
+
+        numberOfPeople = 0
+        document.querySelector("#people").value = ""
+        document.querySelector(".total strong").textContent = "$0.00"
+        document.querySelector(".amount strong").textContent = "$0.00"
+
+     }
